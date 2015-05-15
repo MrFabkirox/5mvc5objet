@@ -42,7 +42,6 @@
 	$listControler->affiche();
 
 	echo('!index!');
-// a refaire ne marche pas
 
 ?>
 
