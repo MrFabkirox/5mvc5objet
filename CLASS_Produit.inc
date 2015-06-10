@@ -6,18 +6,17 @@
 		private $Designation;
 		private $prix;
 
-		public function getId() {
+		function getId() {
 			return $this->id;
 		}
 
-		public function getDesignation() {
+		function getDesignation() {
 			return $this->Designation;
 		}
 
-		public function getPrix() {
+		function getPrix() {
 			return $this->prix;
 		}
-
 	}
 
 	echo('!Produit!');

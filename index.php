@@ -1,3 +1,19 @@
+<?php
+
+class MyClassLoader
+{
+  public static function loadClass($class){
+
+    require "CLASS_$class.inc";
+  }
+}
+
+spl_autoload_register('MyClassLoader::loadClass');
+
+
+$listControler = new ListeProduits();
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -30,15 +46,9 @@
 
 <p>let s do this</p>
 
+
 <?php
 
-	include('Produit.inc');
-	include('DBHandle.inc');
-	include('VueListe.inc');
-	//include('VueTable.inc');
-	include('ListeProduits.inc');
-
-	$listControler = new ListeProduits();
 	$listControler->affiche();
 
 	echo('!index!');

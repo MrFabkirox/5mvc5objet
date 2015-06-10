@@ -15,7 +15,7 @@
 		function affiche() {
 
 			$this->vueListe = new VueListe();
-			display($this->model);
+			$this->vueListe->display($this->model);
 		}
 
 	}
